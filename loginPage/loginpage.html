@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/loginPage/loginpage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script modeltype="application/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <title>Login Page</title>
+    <script src="../jQuery.js"></script>
+
+
+</head>
+<body class= "background" background="/resources/background-image.jpg">
+
+    <div class="login-container">
+        <div class="logo">
+
+            <img src="../resources/logo-hitman.jpg" alt="Your Logo">
+            <h2>Hit Me Up</h2>
+            <p>Solving Emotional Contracts, One Conversation at a Time</p>
+
+        </div>
+        <form>
+
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit" id="login-btn" onclick="redirect()">Login</button>
+
+        </form>
+        <p>New here? <a href="#">Sign up</a></p>
+    </div>
+ 
+    <div class="backdrop hidden" id="backdrop"></div>
+    
+<div class="form-container hidden" id="signup-form-container">
+
+    <div class="logo">
+        <img src="../resources/logo-hitman.jpg" alt="Que logo">
+        <h2>Hit Me Up</h2>
+        <p>Solving Emotional Contracts, One Conversation at a Time</p>
+    </div>
+
+    <button id="close-button" class="close-button">✕</button>
+
+    <form id="signup-form" method="post">
+
+        <input type="hidden" name="id" value="hiddenValue">
+
+        <input type="hidden" name="version" value="hiddenValue">
+
+        <input type="hidden" name="creationTime" value="hiddenValue">
+
+        <input type="hidden" name="updateTime" value="hiddenValue">
+
+        <label for="username">Username</label>
+        <input type="text" id="signup-username" name="username" required>
+
+        <label for="alias">Alias</label>
+        <input type="text" id="alias" name="alias" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" name="password" required>
+
+        <button type="submit" id="register-btn">Sign Up</button>
+    </form>
+</div>
+
+    <script src="./login.js"></script> 
+
+</body>
+</html>
